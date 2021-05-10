@@ -47,6 +47,15 @@ module.exports = {
           include: /svg/ // See below to configure properly
         }
       }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `tjeibi7nc3o2`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: `preview.contentful.com`,
+      },
     }
   ],
 };

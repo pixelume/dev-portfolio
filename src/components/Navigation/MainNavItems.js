@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled, { css, keyframes } from "styled-components";
-import { Context } from "../RootElement";
+import { Context } from "../WrapRoot";
 import { Link } from 'gatsby';
 
 const NavLink = styled(Link).attrs({
