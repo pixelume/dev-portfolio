@@ -3,6 +3,7 @@ module.exports = {
     title: "Developer Portfolio",
   },
   plugins: [
+    "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     // {

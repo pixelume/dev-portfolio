@@ -8,9 +8,9 @@ const baseSize = {
 const H1 = styled.h1`
   color: ${({ theme }) => theme.greyBlue};
   text-align: ${(props) => props.textAlign || "left"};
-  font-size: ${baseSize.mobile}em;
+  font-size: ${(props) => props.size? props.size*baseSize.mobile: baseSize.mobile}em;
   @media only screen and (orientation: landscape) {
-    font-size: ${baseSize.desktop}em;
+    font-size: ${(props) => props.size? props.size*baseSize.desktop: baseSize.desktop}em;
   }
   font-weight: bold;
 `;
@@ -18,16 +18,21 @@ const H3 = styled.h3`
   color: ${({ color, theme }) => theme[color] || color || "inherit"};
   /* color: slategrey; */
   text-align: ${(props) => props.textAlign || "left"};
-  font-size: ${baseSize.mobile / 2.5}em;
+  font-size: ${(props) => props.size? props.size*(baseSize.mobile / 2.5): (baseSize.mobile / 2.5)}em;
   text-transform: uppercase;
   font-weight: bold;
   margin: ${(props) => props.margin || "auto"};
   letter-spacing: ${baseSize.mobile / 50}em;
   @media only screen and (orientation: landscape) {
-    font-size: ${baseSize.desktop / 3}em;
+    font-size: ${(props) => props.size? props.size*(baseSize.desktop / 3): (baseSize.desktop / 3)}em;
     letter-spacing: ${baseSize.desktop / 50}em;
   }
 `;
+
+const SuperHeading = styled(H3)`
+  margin-bottom: -35px;
+  opacity: 0.7;
+`
 
 const P = styled.p`
   color: ${({ color, theme }) => theme[color] || color || theme.greyBlue};
@@ -60,4 +65,4 @@ const imgStyle = {
   boxShadow: '0px 0px 3px -1px #000000',
 }
 
-export { H1, H3, P, Img, imgStyle };
+export { H1, H3, SuperHeading, P, Img, imgStyle };

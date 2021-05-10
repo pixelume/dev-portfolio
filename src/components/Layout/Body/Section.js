@@ -8,6 +8,7 @@ const Section = styled.section`
   border-radius: ${(props) => props.borderRadius || "none"};
   justify-content: ${(props) => props.justifyContent || "space-between"};
   align-items: ${(props) => props.alignItems || "center"};
+  align-content: ${(props) => props.alignContent || "center"};
   ${(props) =>
     props.alignSelf
       ? css`
@@ -37,6 +38,12 @@ const Section = styled.section`
     height
       ? css`
           height: ${height};
+        `
+      : null}
+    ${({ minHeight }) =>
+    minHeight
+      ? css`
+          min-height: ${minHeight};
         `
       : null}
   }

@@ -11,7 +11,7 @@ const Cards = ({ projectsArray, withoutContainer=null }) => {
         return projectsArray.map((card, idx) => {
           // const profilePic = getImage(card.ProfilePicture.localFile)
           return (
-            <Tile to={`#`} exact key={card.id} idx={idx} height="219px">
+            <Tile to={`/project`} exact key={card.id} idx={idx} height="219px">
               {card.image ? (
                 card.image
               ) : (
