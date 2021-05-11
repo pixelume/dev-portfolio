@@ -6,22 +6,37 @@ import { theme } from "../styles/Theme";
 import GlobalStyle from "../styles/GlobalStyle";
 // import { useStaticQuery, graphql } from "gatsby";
 import "@fontsource/montserrat";
+import { useStaticQuery, graphql } from "gatsby";
 
 export const Context = React.createContext();
 
 const WrapRoot = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allContentfulProject {
+        nodes {
+          name
+          techStack
+          slug
+          image {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `);
 
   const providerValue = {
-    // context here
+    projectsArray: data.allContentfulProject.nodes
   };
 
   return (
     // <Grommet theme={grommetTheme}>
     <>
-        <GlobalStyle />
-        <Context.Provider value={providerValue}>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
-        </Context.Provider>
+      <GlobalStyle />
+      <Context.Provider value={providerValue}>
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      </Context.Provider>
     </>
     // </Grommet>
   );

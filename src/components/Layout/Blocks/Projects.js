@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import animationDataBuilding from "../../../images/lotties/23745-building.json";
 import { ColInSection, Section } from '../';
 import Lottie from "react-lottie";
 import {H1, SuperHeading} from '../../../styles'
 import getDefaultOptions from '../../../images/lotties/getDefaultOptions';
 import Cards from "../../../components/Cards/Cards";
-import { projectsArray } from "../../../data/projectsArray";
+// import { projectsArray } from "../../../data/projectsArray";
+import { Context } from '../../WrapRoot';
 
 const Projects = props => {
-  //Logic
+  const {projectsArray} = useContext(Context)
 
   return (
     <Section

@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { css } from "styled-components";
 
 const baseSize = {
@@ -65,4 +66,10 @@ const imgStyle = {
   boxShadow: '0px 0px 3px -1px #000000',
 }
 
-export { H1, H3, SuperHeading, P, Img, imgStyle };
+const mdComponents = {
+  h1: ({children}) => <H1>{children}</H1>,
+  p: ({ children }) => <P>{children}</P>,
+  h3: ({children}) => <H3>{children}</H3>
+};
+
+export { H1, H3, SuperHeading, P, Img, imgStyle, mdComponents };

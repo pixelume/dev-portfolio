@@ -79,7 +79,7 @@ export const projectsArray = [
     image: (
       <StaticImage
         src="../images/projects/04.png"
-        alt="Eyechart Online Web Application"
+        alt="Moramba Self Catering"
         placeholder="dominantColor"
         layout="fixed"
         width={350}

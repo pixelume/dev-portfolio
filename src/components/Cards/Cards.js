@@ -3,17 +3,18 @@ import { Section, ColInSection } from "../Layout";
 import { Tile, TileOverlay } from "./CardStyles";
 import { StaticImage } from "gatsby-plugin-image";
 import { P } from "../../styles";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Cards = ({ projectsArray, withoutContainer=null }) => {
   const render = () => {
     if (projectsArray) {
       if (typeof projectsArray === "object") {
         return projectsArray.map((card, idx) => {
-          // const profilePic = getImage(card.ProfilePicture.localFile)
+          const image = getImage(card.image)
           return (
-            <Tile to={`/project`} exact key={card.id} idx={idx} height="219px">
+            <Tile to={`/${card.slug}`} exact key={card.id} idx={idx} height="219px">
               {card.image ? (
-                card.image
+                <GatsbyImage image={image} />
               ) : (
                 <StaticImage
                   src='../../images/no_image.jpg'

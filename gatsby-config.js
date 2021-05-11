@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Developer Portfolio",
@@ -54,7 +58,7 @@ module.exports = {
         spaceId: `tjeibi7nc3o2`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        host: `preview.contentful.com`,
+        // host: `preview.contentful.com`,
       },
     }
   ],

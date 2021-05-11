@@ -42,7 +42,7 @@ const Education = props => {
             >
               <a href="https://uopeople.edu">
                 <StaticImage
-                  src="../images/128_University_of_the_People_color_logo_mtSudu.png"
+                  src="../../../images/128_University_of_the_People_color_logo_mtSudu.png"
                   alt="University of the People"
                   placeholder="dominantColor"
                   layout="fixed"
@@ -78,7 +78,7 @@ const Education = props => {
             >
               <a href="https://www.uj.ac.za">
                 <StaticImage
-                  src="../images/avatars-000071652739-1l0yuy-original.jpg"
+                  src="../../../images/avatars-000071652739-1l0yuy-original.jpg"
                   alt="University of Johannesburg"
                   placeholder="dominantColor"
                   layout="fixed"
