@@ -52,7 +52,7 @@ const Education = (props) => {
                 style={{ minWidth: 100 }}
               />
             </a>
-            <P color="#222830" margin="auto 0 auto 10px">
+            <P color="#222830" margin="auto auto auto 10px">
               University of the People, Pasadena California, Jul 2017 – Sep 2018
             </P>
           </div>
@@ -87,7 +87,7 @@ const Education = (props) => {
                 style={{ minWidth: 100 }}
               />
             </a>
-            <P margin="auto 0 auto 10px">
+            <P margin="auto auto auto 10px">
               University of Johannesburg, Jan 1996 – Dec 2001
             </P>
           </div>
@@ -140,7 +140,7 @@ const Education = (props) => {
                 style={{ minWidth: 100 }}
               />
             </a>
-            <P margin="auto 0 auto 10px">
+            <P margin="auto auto auto 10px">
               Frontend Masters, Active Current Subscription
             </P>
           </div>

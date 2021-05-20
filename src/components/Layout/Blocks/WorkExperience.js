@@ -42,17 +42,20 @@ const WorkExperience = (props) => {
                 style={{ minWidth: 100 }}
               />
             </a>
-            <P margin="auto 0 auto 10px">
+            <P margin="auto auto auto 10px">
               Eyechart Online, Port Elizabeth, South Africa
             </P>
           </div>
           <P>
-            <strong>Responsible for the development, maintaintenance and expansion of
-            new features for the Eyechart Online web application.</strong>
-            <br /><br/>
-            Eyechart Online is a modern web application written for optometrists and
-            ophthalmologists. It includes various tests and charts used by eye
-            care professionals when evaluating a person's visual skills and
+            <strong>
+              Responsible for the development, maintaintenance and expansion of
+              new features for the Eyechart Online web application.
+            </strong>
+            <br />
+            <br />
+            Eyechart Online is a modern web application written for optometrists
+            and ophthalmologists. It includes various tests and charts used by
+            eye care professionals when evaluating a person's visual skills and
             abilities. It is a replacement for the static bulb-based chart
             projector normally used by optometrists for displaying charts and it
             also includes a whole range of other tests used for assessing visual
@@ -62,7 +65,7 @@ const WorkExperience = (props) => {
             payments.
           </P>
         </div>
-        <hr style={{margin: '40px 0'}}/>
+        <hr style={{ margin: "40px 0" }} />
         <div style={{ margin: "1em 0", color: "inherit" }}>
           <H3>Freelance Frontend Developer, July 2018 - Current</H3>
           <div
@@ -72,21 +75,52 @@ const WorkExperience = (props) => {
               margin: "20px 0",
             }}
           >
+            <StaticImage
+              src="../../../images/freelance.png"
+              alt="Freelance"
+              placeholder="dominantColor"
+              layout="fixed"
+              width={100}
+              height={100}
+              style={{ minWidth: 100 }}
+            />
+            <P margin="auto auto auto 10px">
+              Various front-end, JAMstack and serverless projects completed as a
+              freelance front-end javascript developer. July 2018 - Current.
+            </P>
+          </div>
+          <P>Some of my completed projects can be seen here.</P>
+        </div>
+        <hr style={{ margin: "40px 0" }} />
+        <div style={{ margin: "1em 0", color: "inherit" }}>
+          <H3>Participated and served as project manager in a Chingu Voyage. March 2019 - April 2019</H3>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              margin: "20px 0",
+            }}
+          >
+            <a href="https://chingu.io">
               <StaticImage
-                src="../../../images/freelance.png"
-                alt="Freelance"
+                src="../../../images/chingu.png"
+                alt="Chingu Voyage"
                 placeholder="dominantColor"
                 layout="fixed"
                 width={100}
                 height={100}
                 style={{ minWidth: 100 }}
               />
-            <P margin="auto 0 auto 10px">
-              Various front-end, JAMstack and serverless projects completed as a freelance front-end javascript developer. July 2018 - Current.
-            </P>
+            </a>
+            <P margin="auto auto auto 10px">Chingu Voyage</P>
           </div>
           <P>
-            Some of my completed projects can be seen here.
+            The Chingu Voyage is a remote 6-week program for web developers
+            where you build a project in a remote team and level-up with the
+            technical and soft skills required in a professional software job. I
+            served as project manager in a team of four developers in the 6 week
+            program where we built a React project for the purpose of gaining
+            experience using collaboration tools and managing the project's codebase in a team setting.
           </P>
         </div>
       </ColInSection>
