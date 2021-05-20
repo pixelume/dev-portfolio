@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { ColInSection, Section } from "../";
 import Logo from "../../../images/svg/pieterWolmarans.svg";
 import { AiFillGithub, AiTwotonePhone } from "react-icons/ai";
@@ -6,6 +7,20 @@ import Lottie from "react-lottie";
 import animationDataDev from "../../../images/lotties/41504-developer-is-programming-using-notebook.json";
 import { H1, P } from "../../../styles";
 import getDefaultOptions from "../../../images/lotties/getDefaultOptions";
+
+const StLogo = styled(Logo)`
+  width: 120px;
+  margin-left: 3vw;
+  @media screen and (orientation: landscape) {
+    width: 200px;
+  }
+`;
+const NrStyle = styled.span`
+  font-size: 0.7em;
+  @media screen and (orientation: landscape) {
+    font-size: 1em;
+  }
+`;
 
 const ImgWithDescription = () => {
   // const defaultOptions = {
@@ -33,7 +48,7 @@ const ImgWithDescription = () => {
         color="white"
         col={1}
       >
-        <Logo style={{ width: 200, marginLeft: "3vw" }} />
+        <StLogo />
         <div
           style={{
             fontSize: "1.2em",
@@ -47,7 +62,7 @@ const ImgWithDescription = () => {
           </a>
           &nbsp;&nbsp;|&nbsp;&nbsp;
           <AiTwotonePhone style={{ fontSize: "1.1em" }} />
-          <span style={{ fontSize: "1em" }}>&nbsp;+27 82 839 4959</span>
+          <NrStyle>&nbsp;+27 82 839 4959</NrStyle>
         </div>
       </ColInSection>
       <ColInSection textAlign="center" col={2.3}>
@@ -59,12 +74,12 @@ const ImgWithDescription = () => {
       </ColInSection>
       <ColInSection textAlign="center" color="white" col={2.3}>
         <H1>Hello, I'm Pieter</H1>
-        <P style={{ fontSize: "1.15em" }}>
+        <P style={{ fontSize: "1em" }}>
           I'm a javascript developer with a strong design background. I focus
           mainly on front end development work with React (which is by far my
           favourite front end framework) and related technologies. My areas of
           expertise include working with serverless architectures and the JAM
-          stack. I'm proficient in modern React, React Router, Redux fro state
+          stack. I'm proficient in modern React, React Router, Redux for state
           management, Styled Components, Gatsby, Firebase Realtime Database,
           Firebase Authentication and Google Cloud Functions. I also often use
           headless CMS's like Contentful and Strapi. I care about sound design
