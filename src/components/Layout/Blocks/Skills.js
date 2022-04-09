@@ -5,6 +5,8 @@ import {
   SiReact,
   SiRedux,
   SiStyledComponents,
+  SiMaterialUi,
+  SiStorybook,
   SiReactrouter,
   SiGatsby,
   SiFirebase,
@@ -14,9 +16,11 @@ import {
   SiHtml5,
   SiAdobephotoshop,
   SiSketch,
+  SiAmazonaws,
   SiPython,
   SiNodeDotJs,
-  SiMysql
+  SiMysql,
+  SiTypescript,
 } from 'react-icons/si';
 import Lottie from "react-lottie";
 import animationDataHero from "../../../images/lotties/14800-superman.json";
@@ -71,6 +75,14 @@ const Skills = () => {
               <SiStyledComponents />
               <TechTitle>Styled Components</TechTitle>
             </div>
+            <div data-tip="Material-UI" style={{ margin: "0.9em 0.9em 0 0" }}>
+              <SiMaterialUi />
+              <TechTitle>Material-UI</TechTitle>
+            </div>
+            <div data-tip="Storybook" style={{ margin: "0.9em 0.9em 0 0" }}>
+              <SiStorybook />
+              <TechTitle>Storybook</TechTitle>
+            </div>
             <div data-tip="React Router" style={{ margin: "0.9em 0.9em 0 0" }}>
               <SiReactrouter />
               <TechTitle>React Router</TechTitle>
@@ -86,6 +98,10 @@ const Skills = () => {
             <div data-tip="Javascript" style={{ margin: "0.9em 0.9em 0 0" }}>
               <SiJavascript />
               <TechTitle>Javascript</TechTitle>
+            </div>
+            <div data-tip="Typescript" style={{ margin: "0.9em 0.9em 0 0" }}>
+              <SiTypescript />
+              <TechTitle>Typescript</TechTitle>
             </div>
             <div data-tip="Strapi" style={{ margin: "0.9em 0.9em 0 0" }}>
               <SiStrapi />
@@ -117,6 +133,10 @@ const Skills = () => {
               margin: "0 0",
             }}
           >
+            <div data-tip="AWS" style={{ margin: "0.9em 0.9em 0 0" }}>
+              <SiAmazonaws />
+              <TechTitle>AWS</TechTitle>
+            </div>
             <div data-tip="Python" style={{ margin: "0.9em 0.9em 0 0" }}>
               <SiPython />
               <TechTitle>Python</TechTitle>

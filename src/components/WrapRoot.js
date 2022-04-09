@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 // import { theme, grommetTheme } from "../styles/Theme";
 import { theme } from "../styles/Theme";
-import GlobalStyle from "../styles/GlobalStyle";
+// import GlobalStyle from "../styles/GlobalStyle";
 // import { useStaticQuery, graphql } from "gatsby";
 import "@fontsource/montserrat";
 import { useStaticQuery, graphql } from "gatsby";
@@ -44,7 +44,6 @@ const WrapRoot = ({ children }) => {
   return (
     // <Grommet theme={grommetTheme}>
     <>
-      <GlobalStyle />
       <Context.Provider value={providerValue}>
         <ThemeProvider theme={theme}>{children}</ThemeProvider>
       </Context.Provider>
